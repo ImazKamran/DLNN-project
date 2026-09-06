@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+*.so
+*.pyd
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Datasets and Archives
+*.zip
+*.tar
+*.tar.gz
+chest_xray_raw/
+chest_xray_resized/
+chest_xray/
+
+# Exclude course reports and literature review documents
+*.docx
+*.doc
+*.pptx
+*.ppt
+DLNN Literature review.docx
+Project report.docx
+
+# Exclude 8-epoch exploratory results
+results/
+
+# Operating System and IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

@@ -581,7 +581,7 @@ def evaluate(model, dataloader, criterion, device):
     metrics['accuracy'] = correct / total
     return metrics
 
-def run_single_experiment(model_type, data_dir, epochs=8, batch_size=32, lr=1e-3, 
+def run_single_experiment(model_type, data_dir, epochs=50, batch_size=32, lr=1e-3, 
                           use_weighted_loss=False, use_augmentation=False, prefix='experiment'):
     global IN_COLAB
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -705,7 +705,7 @@ def main(drive_zip_path='/content/drive/MyDrive/chest_xray.zip', output_drive_di
         metrics, ckpt = run_single_experiment(
             model_type=model_type,
             data_dir=resized_data_dir,
-            epochs=8,
+            epochs=50,
             use_weighted_loss=weighted,
             use_augmentation=augmented,
             prefix=prefix
